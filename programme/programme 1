@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+    float temp;
+    char choice;
+    int res;
+    cout<<"enter thr choice:";
+    cin>>choice;
+    switch(choice){
+        case 'F':{
+            cout<<"enter in the no in celcius"<<endl;
+            cin>>temp;
+            res=((temp*9/5)+32);
+            cout<<"temp in fahrenheit is"<<res<<endl;
+            break;
+            case 'c':
+                cout<<"enter the no in fahrenheit:"<<endl;
+                cin>>temp;
+                res=(5/9*(temp-32));
+                cout<<"temp in celsius is"<<res<<endl;
+                break;
+                default:
+                cout<<"invalid programme";
+        }
+         return 0;
+    }
+}
