@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class student{
+	private:
+		int count;
+		int sum;
+		friend void getsum();
+};
+
+
+void getsum(){
+	student s;
+	s.count=0;
+	s.sum=0;
+	for(int i=100;i<=200;i++){
+		if(i%9==0){
+			s.count++;
+			s.sum=i+s.sum;
+		}
+}
+		cout<<"no of elements between 100to200"<<s.count;
+		cout<<"sum of the elements between 100to200"<<s.sum;
+}
+
+int main(){
+	getsum();
+	return 0;
+}
