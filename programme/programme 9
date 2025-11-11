@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+void swap(int a,int b){
+	int temp =a;
+	a=b;
+	b=temp;
+	cout<<"value of a and b"<<a<<b;
+}
+int main(){
+	int x;
+	int y;
+	cout<<"value of x and y"<<endl;
+	cin>>x>>y;
+	cout<<"value before swap"<<x<<y<<endl;
+	swap(x,y);
+	cout<<"after swap"<<x<<y<<endl;
+	return 0;
+}
