@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    float percentage;
+    cout<<"Enter Percentage";
+    cin>>percentage;
+    if(percentage<=0 || percentage>=100){
+        cout<<"invaid percentage";
+    }
+    else if(percentage>90){
+        cout<<"A grade"<<endl;
+    }else if(percentage>75){
+        cout<<"B grade"<<endl;
+    }else if(percentage>55){
+        cout<<"C grade"<<endl;
+    }else if(percentage>40){
+        cout<<"D grade"<<endl;
+    }else if(percentage<40){
+        cout<<"f grade"<<endl;
+    }
+ return 0;
+}
