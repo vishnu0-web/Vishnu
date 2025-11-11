@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+class Employee{
+    private:
+    float bs,gs;
+    public:
+    void setsallary(){
+        cout<<"Enter bs";
+        cin>>bs;
+        float ta,da;
+        gs= bs+ta+da;
+        ta= 0.15*bs;
+        da= 0.3*bs;
+    }
+    void getsallary();
+};
+void Employee::getsallary(){
+  cout<<"gs of Employee is"<<gs<<endl;
+}
+int main(){
+    Employee e;
+    e.setsallary();
+    e.getsallary();
+    return 0;
+}
